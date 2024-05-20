@@ -1,0 +1,26 @@
+{
+    "name": "acrosswp/acrosswp-plugins-info",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "description": "Composer to autoload the AcrossWP Plugin Info Class",
+    "homepage": "https://acrosswp.com/",
+    "keywords": [
+        "wordpress",
+        "plugin"
+    ],
+    "autoload": {
+        "files": ["index.php"]
+    },
+    "support": {
+        "issues": "https://github.com/acrosswp/acrosswp-plugins-info/issues"
+    },
+    "require": {
+        "szepeviktor/package-path": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "acrosswp",
+            "email": "contant@acrosswp.com"
+        }
+    ]
+}
