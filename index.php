@@ -11,36 +11,36 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Check if the class does not exits then only allow the file to add
  */
-if( ! class_exists( 'AcrossWP_Plugins_Info' ) ) {
+if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 	/**
 	 * Fired during plugin licences.
 	 *
 	 * This class defines all code necessary to run during the plugin's licences and update.
 	 *
 	 * @since      0.0.1
-	 * @package    AcrossWP_Plugins_Info
-	 * @subpackage AcrossWP_Plugins_Info/includes
+	 * @package    WPBoilerplate_Plugins_Info
+	 * @subpackage WPBoilerplate_Plugins_Info/includes
 	 * @author     WPBoilerplate <contact@acrosswp.com>
 	 */
-	class AcrossWP_Plugins_Info {
+	class WPBoilerplate_Plugins_Info {
 
 		/**
 		 * The single instance of the class.
 		 *
-		 * @var AcrossWP_Plugins_Info
+		 * @var WPBoilerplate_Plugins_Info
 		 * @since 0.0.1
 		 */
 		protected static $_instance = null;
 
 		/**
-		 * Main AcrossWP_Plugins_Info Instance.
+		 * Main WPBoilerplate_Plugins_Info Instance.
 		 *
 		 * Ensures only one instance of WooCommerce is loaded or can be loaded.
 		 *
 		 * @since 0.0.1
 		 * @static
-		 * @see AcrossWP_Plugins_Info()
-		 * @return AcrossWP_Plugins_Info - Main instance.
+		 * @see WPBoilerplate_Plugins_Info()
+		 * @return WPBoilerplate_Plugins_Info - Main instance.
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -95,5 +95,5 @@ if( ! class_exists( 'AcrossWP_Plugins_Info' ) ) {
 		}
 	}
 
-	AcrossWP_Plugins_Info::instance();
+	WPBoilerplate_Plugins_Info::instance();
 }
