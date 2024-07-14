@@ -11,36 +11,36 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Check if the class does not exits then only allow the file to add
  */
-if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
+if( ! class_exists( 'AcrossWP_Plugins_Info' ) ) {
 	/**
 	 * Fired during plugin licences.
 	 *
 	 * This class defines all code necessary to run during the plugin's licences and update.
 	 *
 	 * @since      0.0.1
-	 * @package    WPBoilerplate_ Register_Blocks
-	 * @subpackage WPBoilerplate_ Register_Blocks/includes
+	 * @package    AcrossWP_Plugins_Info
+	 * @subpackage AcrossWP_Plugins_Info/includes
 	 * @author     WPBoilerplate <contact@acrosswp.com>
 	 */
-	class WPBoilerplate_ Register_Blocks {
+	class AcrossWP_Plugins_Info {
 
 		/**
 		 * The single instance of the class.
 		 *
-		 * @var WPBoilerplate_ Register_Blocks
+		 * @var AcrossWP_Plugins_Info
 		 * @since 0.0.1
 		 */
 		protected static $_instance = null;
 
 		/**
-		 * Main WPBoilerplate_ Register_Blocks Instance.
+		 * Main AcrossWP_Plugins_Info Instance.
 		 *
 		 * Ensures only one instance of WooCommerce is loaded or can be loaded.
 		 *
 		 * @since 0.0.1
 		 * @static
-		 * @see WPBoilerplate_ Register_Blocks()
-		 * @return WPBoilerplate_ Register_Blocks - Main instance.
+		 * @see AcrossWP_Plugins_Info()
+		 * @return AcrossWP_Plugins_Info - Main instance.
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -54,7 +54,7 @@ if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
 		 * 
 		 * @return string Path of the vendor dir
 		 */
-		function get_vendor_path() {
+		public function get_vendor_path() {
 			return \SzepeViktor\Composer\PackagePath::getVendorPath();	
 		}
 
@@ -63,7 +63,7 @@ if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
 		 * 
 		 * @return string Path of the plugins
 		 */
-		function get_plugin_path() {
+		public function get_plugin_path() {
 			return dirname( $this->get_vendor_path() );
 		}
 
@@ -72,7 +72,7 @@ if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
 		 * 
 		 * @return string Path of the plugins
 		 */
-		function get_full_plugin_path() {
+		public function get_full_plugin_path() {
 			return $this->get_plugin_path() . '/' . $this->get_plugin_file_name() . '.php';
 		}
 
@@ -81,7 +81,7 @@ if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
 		 * 
 		 * @return string Path of the plugins
 		 */
-		function get_plugin_file_name() {
+		public function get_plugin_file_name() {
 			return basename( $this->get_plugin_path() );
 		}
 
@@ -90,10 +90,10 @@ if( ! class_exists( 'WPBoilerplate_ Register_Blocks' ) ) {
 		 * 
 		 * @return string Path of the plugins
 		 */
-		function get_block_path() {
+		public function get_block_path() {
 			return $this->get_plugin_path() . '/build';
 		}
 	}
 
-	WPBoilerplate_ Register_Blocks::instance();
+	AcrossWP_Plugins_Info::instance();
 }
