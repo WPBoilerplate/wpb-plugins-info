@@ -1,9 +1,9 @@
 {
-    "name": "acrosswp/acrosswp-plugins-info",
+    "name": "wpboilerplate/wpb-plugins-info",
     "type": "library",
     "license": "GPL-2.0-or-later",
     "description": "Composer to autoload the AcrossWP Plugin Info Class",
-    "homepage": "https://acrosswp.com/",
+    "homepage": "https://github.com/WPBoilerplate/wpb-plugins-info",
     "keywords": [
         "wordpress",
         "plugin"
@@ -12,15 +12,14 @@
         "files": ["index.php"]
     },
     "support": {
-        "issues": "https://github.com/acrosswp/acrosswp-plugins-info/issues"
+        "issues": "https://github.com/WPBoilerplate/wpb-plugins-info/issues"
     },
     "require": {
         "szepeviktor/package-path": "dev-master"
     },
     "authors": [
         {
-            "name": "acrosswp",
-            "email": "contant@acrosswp.com"
+            "name": "WPBoilerplate"
         }
     ]
 }
