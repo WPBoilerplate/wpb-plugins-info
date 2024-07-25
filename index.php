@@ -86,6 +86,15 @@ if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 		}
 
 		/**
+		 * Get the plugin path basename
+		 * 
+		 * @return string Path of the plugins
+		 */
+		public function get_plugin_basename() {
+			return plugin_basename( $this->get_full_plugin_path() );
+		}
+
+		/**
 		 * Get the plugin path
 		 * 
 		 * @return string Path of the plugins
