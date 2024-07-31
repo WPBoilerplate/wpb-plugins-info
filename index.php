@@ -1,10 +1,4 @@
 <?php
-/**
- * BuddyBoss Compatibility Integration Class.
- *
- * @since BuddyBoss 1.1.5
- */
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -17,10 +11,9 @@ if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 	 *
 	 * This class defines all code necessary to run during the plugin's licences and update.
 	 *
-	 * @since      0.0.1
+	 * @since      1.0.0
 	 * @package    WPBoilerplate_Plugins_Info
 	 * @subpackage WPBoilerplate_Plugins_Info/includes
-	 * @author     WPBoilerplate <contact@acrosswp.com>
 	 */
 	class WPBoilerplate_Plugins_Info {
 
@@ -28,7 +21,7 @@ if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 		 * The single instance of the class.
 		 *
 		 * @var WPBoilerplate_Plugins_Info
-		 * @since 0.0.1
+		 * @since 1.0.0
 		 */
 		protected static $_instance = null;
 
@@ -37,7 +30,7 @@ if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 		 *
 		 * Ensures only one instance of WooCommerce is loaded or can be loaded.
 		 *
-		 * @since 0.0.1
+		 * @since 1.0.0
 		 * @static
 		 * @see WPBoilerplate_Plugins_Info()
 		 * @return WPBoilerplate_Plugins_Info - Main instance.
@@ -100,7 +93,7 @@ if( ! class_exists( 'WPBoilerplate_Plugins_Info' ) ) {
 		 * @return string Path of the plugins
 		 */
 		public function get_block_path() {
-			return $this->get_plugin_path() . '/build';
+			return $this->get_plugin_path() . '/build/blocks';
 		}
 	}
 
